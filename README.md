@@ -4,6 +4,14 @@ Some dumb DIY work with my [Raspberry Pi 3](https://www.raspberrypi.com/products
 
 <s>YAY such a money-wasting DIY project! but at least I gave my rolling-on-the-floor Raspberry Pi 3 a usage ;)</s>
 
+Why are you doing this? Aren't you reinventing the wheels?
+==========================================================
+ - Just for fun!
+ - Buying a finished product is very costly!
+ - Building my own useful device is very accomplishing! isn't it?
+ - Make a good experience and keep my *smol* hardware/electrician skill!
+ - <s>Hey, what's the problem? I **just** wanted to build this from scratch, so don't bother me</s>
+
 BOM
 ===
 ### Picked up in my room
