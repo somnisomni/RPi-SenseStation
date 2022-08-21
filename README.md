@@ -18,6 +18,8 @@ BOM
  - (A perfboard)
  - A bunch of M-F/M-M wires
  - (An soldering iron and its friends)
+   - (Actually I bought a new soldering iron, because the made-in-China cheap one which I was bought from AliExpress is ...*a trash*)
+
 ### Bought from specialized store ([디바이스마트](https://www.devicemart.co.kr/))
  - RF-180 power socket
    - Info : https://www.devicemart.co.kr/goods/view?no=21446
