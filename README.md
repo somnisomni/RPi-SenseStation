@@ -1,5 +1,7 @@
 RPi-SenseStation
 ================
+[🇰🇷 한국어](README.ko.md)
+
 Some dumb DIY work with my [Raspberry Pi 3](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/) + [Home Assistant](https://www.home-assistant.io/), making RPi a **total control and monitor tower** of my IoT devices and attached sensors.
 
 <s>YAY such a money-wasting DIY project! but at least I gave my rolling-on-the-floor Raspberry Pi 3 a usage ;)</s>
