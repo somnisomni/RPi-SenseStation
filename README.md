@@ -50,6 +50,10 @@ BOM
    - Info : https://www.devicemart.co.kr/goods/view?no=10916345
  - (ONE007) MQ-2 flammable gas sensor module
    - Info : https://www.devicemart.co.kr/goods/view?no=10916339
+ - (ONE009) IR phototransistor infrared receiver module
+   - Info : https://www.devicemart.co.kr/goods/view?no=10916341
+ - (ELB030103) IR double-headed infrared transmitter module
+   - Info : https://www.devicemart.co.kr/goods/view?no=1310703
  - Microchip Technology MCP3008-I/P ADC converter
    - Product info : https://www.microchip.com/en-us/product/MCP3008
    - Info : https://www.devicemart.co.kr/goods/view?no=1322885
@@ -74,3 +78,6 @@ Target devices to be controlled/monitored
 ### IoT devices
  - Xiaomi Mijia Smart Standing Fan 2 (BPLDS02DM)
  - Xiaomi Mi Air 2S
+
+### IR remote controlled devices
+ - Samsung Hauzen Air Conditioner (HS-B67PR)

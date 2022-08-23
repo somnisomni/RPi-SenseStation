@@ -50,6 +50,10 @@ BOM
    - 정보 : https://www.devicemart.co.kr/goods/view?no=10916345
  - (ONE007) MQ-2 인화성 가스 센서 모듈
    - 정보 : https://www.devicemart.co.kr/goods/view?no=10916339
+ - (ONE009) IR 포토트랜지스터 적외선 수신 모듈
+   - 정보 : https://www.devicemart.co.kr/goods/view?no=10916341
+ - (ELB030103) IR 더블헤드 적외선 송신 모듈
+   - 정보 : https://www.devicemart.co.kr/goods/view?no=1310703
  - Microchip Technology MCP3008-I/P ADC 컨버터
    - 제품 정보 : https://www.microchip.com/en-us/product/MCP3008
    - 정보 : https://www.devicemart.co.kr/goods/view?no=1322885
@@ -74,3 +78,6 @@ BOM
 ### IoT 기기
  - Xiaomi Mijia Smart Standing Fan 2 (BPLDS02DM)
  - Xiaomi Mi Air 2S
+
+### IR 제어 기기
+ - 삼성 하우젠 에어컨 (HS-B67PR)
