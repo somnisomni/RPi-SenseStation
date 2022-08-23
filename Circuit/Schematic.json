@@ -179,7 +179,9 @@
           "O~650~-620~gge37985~M 646 -624 L 654 -616 M 654 -624 L 646 -616~#33cc33~0",
           "O~650~-630~gge37991~M 646 -634 L 654 -626 M 654 -634 L 646 -626~#33cc33~0",
           "O~650~-640~gge37997~M 646 -644 L 654 -636 M 654 -644 L 646 -636~#33cc33~0",
-          "T~L~920~-110~0~#009999~~12pt~~~~comment~[!] May subject to change~1~undefined~gge38005~0~pinpart",
+          "T~L~925~-120~0~#009999~~12pt~~~~comment~[!] May subject to change~1~undefined~gge38005~0~pinpart",
+          "T~L~720~-100~0~#330099~~~~~~comment~Copyright ⓒ somni, All rights reserved. DO NOT SELL OR PRETEND TO BE YOUR WORK!~1~undefined~gge38012~0~pinpart",
+          "T~L~15~-785~0~#FAFAFA~~4pt~~~~comment~ⓒ somni, https://github.com/somnisomni/RPi-SenseStation~1~undefined~gge38018~0~pinpart",
           "J~495~-235~2.5~#CC0000~gge32700~0",
           "J~635~-235~2.5~#CC0000~gge32737~0",
           "J~565~-610~2.5~#CC0000~gge33135~0",
@@ -201,10 +203,10 @@
           "J~565~-630~2.5~#CC0000~gge33131~0"
         ],
         "BBox": {
-          "x": -0.3,
-          "y": -806.7,
-          "width": 1149.3,
-          "height": 807.1
+          "x": 0,
+          "y": -806.8,
+          "width": 1149,
+          "height": 807.4
         },
         "colors": {}
       }
