@@ -1,3 +1,5 @@
+#cloud-config
+
 ### Ubuntu cloud-init config for network ###
 ## Ref: https://cloudinit.readthedocs.io/
 
