@@ -24,7 +24,7 @@ BOM
    - 정보 : https://www.raspberrypi.com/products/sense-hat/
  - Mean Well RS-15-5
    - 정보 : https://www.meanwell.com/Upload/PDF/RS-15/RS-15-SPEC.PDF
- - USB A타입 to micro-B타입 케이블
+ - USB A타입 to micro-B타입 고속충전 케이블
  - 브레드보드
  - (만능기판)
  - M-F/M-M 와이어 여러개

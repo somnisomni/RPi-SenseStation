@@ -23,7 +23,7 @@ BOM
    - Info : https://www.raspberrypi.com/products/sense-hat/
  - Mean Well RS-15-5
    - Info : https://www.meanwell.com/Upload/PDF/RS-15/RS-15-SPEC.PDF
- - USB Type-A to USB Micro Type-B cable
+ - USB Type-A to USB Micro Type-B fast-charging cable
  - A breadboard
  - (A perfboard)
  - A bunch of M-F/M-M wires
