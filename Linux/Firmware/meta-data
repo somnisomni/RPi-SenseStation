@@ -1,0 +1,4 @@
+### Ubuntu cloud-init config for metadata ###
+## Ref: https://cloudinit.readthedocs.io/
+
+instance_id: somni-rpi-sensestation

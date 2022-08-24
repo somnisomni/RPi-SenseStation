@@ -1,0 +1,19 @@
+### Ubuntu cloud-init config for network ###
+## Ref: https://cloudinit.readthedocs.io/
+
+version: 2
+ethernets:
+  eth0:
+    dhcp4: true
+    optional: true
+
+# Below is for Wi-Fi network, uncomment to configure it
+#wifis:
+#  wlan0:
+#    dhcp4: true
+#    optional: true
+#    access-points:
+#      "ACCESS POINT NAME":
+#        # Set `true` if the AP is hidden
+#        hidden: false
+#        password: "PASSWORD"

@@ -1,0 +1,6 @@
+### Insert below cmdlines into `cmdline.txt` file, before `quiet splash` parameter ###
+
+# `usbhid.mousepoll=0` : Disables polling for USB HID mouses (reduces lag for wireless mouses)
+# `cfg80211.ieee80211_regdom=KR` : Set Wi-Fi regulatory country to South Korea (change `KR` with your country code)
+
+usbhid.mousepoll=0 cfg80211.ieee80211_regdom=KR

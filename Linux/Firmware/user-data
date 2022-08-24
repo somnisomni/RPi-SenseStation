@@ -1,0 +1,22 @@
+### Ubuntu cloud-init config for user defaults ###
+## Ref: https://cloudinit.readthedocs.io/
+
+hostname: somni-RPi-SenseStation
+ssh_pwauth: true
+
+groups:
+  somni
+
+users:
+- name: somni
+  gecos: somni
+  primary_group: somni
+  groups: somni
+
+chpasswd:
+  expire: true
+  list:
+  - somni:somni
+
+package_update: true
+package_upgrade: true
