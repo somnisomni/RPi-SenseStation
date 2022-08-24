@@ -1,0 +1,43 @@
+##### Ref: https://www.raspberrypi.com/documentation/computers/config_txt.html #####
+
+[all]
+### Crucial parameters for booting Ubuntu ###
+kernel=vmlinuz
+cmdline=cmdline.txt
+initramfs initrd.img followkernel
+arm_64bit=1
+dtoverlay=dwc2
+
+[pi4]
+### Pi 4 specific parameters ###
+max_framebuffers=2
+arm_boost=1
+
+[all]
+# Enable I2C interface
+dtparam=i2c_arm=on
+# Enable SPI interface
+dtparam=spi=on
+# Enable DRM VC4 V3D driver
+dtoverlay=vc4-kms-v3d
+
+# Disable rainbow splash screen
+disable_splash=1
+# Disable compensation for displays with overscan
+disable_overscan=1
+
+[pi3]
+# Lower GPU memory allocation, from default 76MB.
+# Uncomment below when you're planning to have GUI environment
+gpu_mem=48
+
+### Just small overclocking for Pi 3 ###
+# ARM CPU freq (default 1200MHz)
+arm_freq=1300
+# GPU freq (default 400MHz)
+gpu_freq=450
+# SDRAM freq (default 450MHz)
+sdram_freq=500
+# Over-voltage, uncommenting below will set the warranty bit!!
+# over_voltage=2
+# over_voltage_min=-2
