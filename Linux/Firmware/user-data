@@ -3,24 +3,22 @@
 ### Ubuntu cloud-init config for user defaults ###
 ## Ref: https://cloudinit.readthedocs.io/
 ##
-## Default user is `somni`, with password `somni`. You will be prompted to change the password.
+## Default user is `somni`, with password `somni`.
 
 hostname: somni-RPi-SenseStation
 ssh_pwauth: true
+disable_root: true
 
 groups:
-- somni
+  - somni
 
 users:
-- name: somni
-  gecos: somni
-  primary_group: somni
-  groups: sudo
-
-chpasswd:
-  expire: true
-  list:
-  - somni:somni
+  - name: somni
+    gecos: somni
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    primary_group: somni
+    lock_passwd: false
+    passwd: $6$4OVTfvf8L3wHPBIm$px923sPy/VJ2o7op8WaQlk3cmkcp.Eoj1Zj52UNRriwMaLX5ZHcPQnuH5TNogwa1AxlzrFUu8dV88t/rJ7QxY1
 
 package_update: true
 package_upgrade: true
