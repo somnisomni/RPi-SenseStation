@@ -59,6 +59,10 @@ BOM
    - Info : https://www.devicemart.co.kr/goods/view?no=1322885
  - (To be added)
 
+### Bought from some random stores
+ - TP-Link Tapo P110 smart plug (2-Pack)
+   - Product info : https://www.tp-link.com/kr/home-networking/smart-plug/tapo-p110/
+
 Target devices to be controlled/monitored
 =========================================
 ### Sensors

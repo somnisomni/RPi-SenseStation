@@ -59,6 +59,10 @@ BOM
    - 정보 : https://www.devicemart.co.kr/goods/view?no=1322885
  - (추가 예정)
 
+### 아무데서나 구매
+ - TP-Link Tapo P110 스마트 플러그 (2-Pack)
+   - 제품 정보 : https://www.tp-link.com/kr/home-networking/smart-plug/tapo-p110/
+
 제어·모니터링할 기기
 ====================
 ### 센서
@@ -78,6 +82,9 @@ BOM
 ### IoT 기기
  - Xiaomi Mijia Smart Standing Fan 2 (BPLDS02DM)
  - Xiaomi Mi Air 2S
+
+### 상태 체크
+ - 개인 PC (`ping` 사용)
 
 ### IR 제어 기기
  - 삼성 하우젠 에어컨 (HS-B67PR)
