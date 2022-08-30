@@ -75,6 +75,9 @@ Target devices to be controlled/monitored
    - Temperature
    - Humidity
 
+### Health Check
+ - Personal PC via `ping`
+
 ### IoT devices
  - Xiaomi Mijia Smart Standing Fan 2 (BPLDS02DM)
  - Xiaomi Mi Air 2S
