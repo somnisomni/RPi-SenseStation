@@ -23,9 +23,13 @@ BOM
    - Info : https://www.raspberrypi.com/products/sense-hat/
  - Mean Well RS-15-5
    - Info : https://www.meanwell.com/Upload/PDF/RS-15/RS-15-SPEC.PDF
+ - ~~microSD memory card~~
+   - ~~SanDisk one~~ **corrupted and physically broken**
+   - ~~SK Networks MOCAT one~~ **became write-protected or cause data loss in couple of days but normal after reformat, but I decided not to use microSD cards**
+ - An *old* 2.5-inch HDD, which was from *old* Lenovo laptop
  - USB Type-A to USB Micro Type-B fast-charging cable
  - A breadboard
- - (A perfboard)
+   - or a perfboard, if you decided to solder these *smol* things
  - A bunch of M-F/M-M wires
  - (An soldering iron and its friends)
    - (Actually I bought a new soldering iron, because the made-in-China cheap one which I was bought from AliExpress is ...*a trash*)
@@ -62,29 +66,21 @@ BOM
 ### Bought from some random stores
  - TP-Link Tapo P110 smart plug (2-Pack)
    - Product info : https://www.tp-link.com/kr/home-networking/smart-plug/tapo-p110/
+ - MBF U3SATA-BK SATA to USB 3.0 (Type A) Converter
+   - Product info : https://mybestfriend.co.kr/product/detail.html?product_no=3873&cate_no=332&display_group=3
 
 Target devices to be controlled/monitored
 =========================================
-### Sensors
- - DHT11 temperature & humidity
- - MQ-2 flammable gas sensor
- - Vibration sensor
- - CdS light sensor
- - Sound pressure sensor
- - Sensors provided in Sense HAT
-   - Gyroscope
-   - Accelerometer
-   - Magnetometer
-   - Barometric pressure
-   - Temperature
-   - Humidity
-
-### Health Check
- - Personal PC via `ping`
-
-### IoT devices
- - Xiaomi Mijia Smart Standing Fan 2 (BPLDS02DM)
- - Xiaomi Mi Air 2S
-
-### IR remote controlled devices
- - Samsung Hauzen Air Conditioner (HS-B67PR)
+| Name of sensor or device          | Type         | Monitor/Control Target                                                        | Home Assistant Integration |
+| --------------------------------- | ------------ | ----------------------------------------------------------------------------- | -------------------------- |
+| DHT11                             | Sensor       | Temperature, Humidity                                                         | (GPIO →) MQTT              |
+| MQ-2                              | Sensor       | Flammable gas concentration level                                             | (GPIO →) MQTT              |
+| SW-420                            | Sensor       | Vibration detection                                                           | (GPIO →) MQTT              |
+| CdS                               | Sensor       | Light level                                                                   | (GPIO →) MQTT              |
+| Sound pressure sensor             | Sensor       | Sound pressure level                                                          | (GPIO →) MQTT              |
+| Sense HAT                         | Sensor       | Gyroscope, Accelerometer, Magnetometer, Barometer, Temperature, Humidity      | (GPIO →) MQTT              |
+| Xiaomi Mijia Smart Standing Fan 2 | IoT Device   | Device control                                                                | Xiaomi Miio                |
+| Xiaomi Mi Air 2S                  | IoT Device   | Device control, Temperature, Humidity, PM2.5 particulates concentration level | Xiaomi Miio                |
+| Tapo P110                         | IoT Device   | Device control, Electric power usage | HACS → Tapo Controller                 |
+| Personal PC                       | Health Check | Power status using `ping`                                                     | MQTT                       |
+| Samsung Hauzen A/C HS-B67PR       | IR Control   | Device control                                                                | MQTT (→ GPIO)              |

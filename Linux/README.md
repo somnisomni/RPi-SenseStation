@@ -5,7 +5,7 @@ RPi-SenseStation OS(Linux) Setup
  - **Ubuntu Server 22.04 arm64**
    - Daily prebuilted image(20220901) for Raspberry Pi ARM64
 
-## Reducing writes on microSD card
+## Reducing writes on microSD card (if you using it)
  ### F2FS
  > You can skip this section, and I strongly recommend to skip this if you are not familiar with Linux
 
