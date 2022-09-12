@@ -27,6 +27,7 @@ BOM
    - ~~SanDisk one~~ **corrupted and physically broken**
    - ~~SK Networks MOCAT one~~ **became write-protected or cause data loss in couple of days but normal after reformat, but I decided not to use microSD cards**
  - An *old* 2.5-inch HDD, which was from *old* Lenovo laptop
+   - HGST Z5K500-500 SATA2 5400RPM 500GB
  - USB Type-A to USB Micro Type-B fast-charging cable
  - A breadboard
    - or a perfboard, if you decided to solder these *smol* things
