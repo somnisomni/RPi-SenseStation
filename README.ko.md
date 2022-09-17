@@ -25,8 +25,8 @@ BOM
  - Mean Well RS-15-5
    - 정보 : https://www.meanwell.com/Upload/PDF/RS-15/RS-15-SPEC.PDF
  - ~~마이크로SD 메모리 카드~~
-   - ~~SanDisk제 카드~~ **손상됨 (논리적으로든 물리적으로든)**
-   - ~~SK네트웍스제 MOCAT 카드~~ **실사용 며칠 후에 쓰기 방지가 되어버리거나 데이터 유실이 발생함. 재포맷하면 괜찮아지지만 그냥 SD카드 안쓰기로 결정함**
+   - ~~SanDisk제 카드~~ **손상됨 (논리적+물리적)**
+   - ~~SK네트웍스제 MOCAT 카드~~ **실사용 며칠 후에 쓰기 방지가 되어버리거나 데이터 유실이 발생함. 재포맷하면 괜찮아지지만 그냥 SD카드 사용을 포기함**
  - *구형* 레노버 노트북에서 적출한 *구형* 2.5인치 HDD
    - HGST Z5K500-500 SATA2 5400RPM 500GB
  - USB A타입 to micro-B타입 고속충전 케이블
@@ -69,6 +69,8 @@ BOM
    - 제품 정보 : https://www.tp-link.com/kr/home-networking/smart-plug/tapo-p110/
  - MBF U3SATA-BK SATA to USB 3.0 (A타입) 컨버터
    - 제품 정보 : https://mybestfriend.co.kr/product/detail.html?product_no=3873&cate_no=332&display_group=3
+ - 마하링크 ML-UFY002 USB 2.0 연장 Y 케이블
+   - 제품 정보 : http://machlink.co.kr/product/detail.html?product_no=916&cate_no=195&display_group=1
 
 제어·모니터링할 기기
 ====================

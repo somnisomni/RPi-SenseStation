@@ -25,10 +25,10 @@ BOM
    - Info : https://www.meanwell.com/Upload/PDF/RS-15/RS-15-SPEC.PDF
  - ~~microSD memory card~~
    - ~~SanDisk one~~ **corrupted and physically broken**
-   - ~~SK Networks MOCAT one~~ **became write-protected or cause data loss in couple of days but normal after reformat, but I decided not to use microSD cards**
+   - ~~SK Networks MOCAT one~~ **became write-protected or cause data loss in couple of days but normal after reformat, but I gave up using microSD cards**
  - An *old* 2.5-inch HDD, which was from *old* Lenovo laptop
    - HGST Z5K500-500 SATA2 5400RPM 500GB
- - USB Type-A to USB Micro Type-B fast-charging cable
+ - USB Type-A to Micro Type-B fast-charging cable
  - A breadboard
    - or a perfboard, if you decided to solder these *smol* things
  - A bunch of M-F/M-M wires
@@ -69,6 +69,8 @@ BOM
    - Product info : https://www.tp-link.com/kr/home-networking/smart-plug/tapo-p110/
  - MBF U3SATA-BK SATA to USB 3.0 (Type A) Converter
    - Product info : https://mybestfriend.co.kr/product/detail.html?product_no=3873&cate_no=332&display_group=3
+ - MachLink ML-UFY002 USB 2.0 Extension Y Cable
+   - Product info : http://machlink.co.kr/product/detail.html?product_no=916&cate_no=195&display_group=1
 
 Target devices to be controlled/monitored
 =========================================
@@ -82,6 +84,6 @@ Target devices to be controlled/monitored
 | Sense HAT                         | Sensor       | Gyroscope, Accelerometer, Magnetometer, Barometer, Temperature, Humidity      | (GPIO →) MQTT              |
 | Xiaomi Mijia Smart Standing Fan 2 | IoT Device   | Device control                                                                | Xiaomi Miio                |
 | Xiaomi Mi Air 2S                  | IoT Device   | Device control, Temperature, Humidity, PM2.5 particulates concentration level | Xiaomi Miio                |
-| Tapo P110                         | IoT Device   | Device control, Electric power usage | HACS → Tapo Controller                 |
+| Tapo P110                         | IoT Device   | Device control, Electric power usage                                          | HACS → Tapo Controller     |
 | Personal PC                       | Health Check | Power status using `ping`                                                     | MQTT                       |
 | Samsung Hauzen A/C HS-B67PR       | IR Control   | Device control                                                                | MQTT (→ GPIO)              |
