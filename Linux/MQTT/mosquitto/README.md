@@ -9,7 +9,7 @@ $ sudo apt install mosquitto
 
 ### Create password file
 ```sh
-$ sudo mosquitto_passwd /etc/mosquitto/passwd somni
+$ sudo mosquitto_passwd -c /etc/mosquitto/passwd somni
   # password input will be prompted
 ```
  - You can change `somni` with any name you want.
