@@ -6,6 +6,8 @@ kernel=vmlinuz
 cmdline=cmdline.txt
 initramfs initrd.img followkernel
 arm_64bit=1
+
+# Comment out below when you use USB drive for boot
 dtoverlay=dwc2
 
 [pi4]
