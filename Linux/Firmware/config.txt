@@ -16,9 +16,10 @@ max_framebuffers=2
 arm_boost=1
 
 [all]
-# If you will use USB drive for boot media, you can uncomment out below.
+# If you will use USB drive for boot media, you can uncomment out configs below.
 # This will program OTP chip in order to boot from USB drive.
 #program_usb_boot_mode=1
+#program_usb_boot_timeout=1
 
 # Enable I2C interface
 dtparam=i2c_arm=on
