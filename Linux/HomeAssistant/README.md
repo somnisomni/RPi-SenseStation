@@ -16,7 +16,7 @@ $ podman run -d \
              -u $(id -u):$(id -g) \
              -v /data/homeassistant/config:/config:Z,U \
              --net=host \
-             docker.io/homeassistant/home-assistant:latest
+             ghcr.io/home-assistant/home-assistant:latest
 
 # Enable UFW firewall and allow Home Assistant Web UI port
 $ sudo ufw enable
@@ -34,7 +34,7 @@ $ sudo loginctl enable-linger somni
   - **`-v /data/homeassistant/config:/config:Z,U`**: Bind container `/config` directory with host `/data/homeassistant/config` directory
     - If you concern about `Z,U` flags, please refer [RedHat's article](https://www.redhat.com/sysadmin/debug-rootless-podman-mounted-volumes)
   - **`--net=host`**: Use host network directly
-  - **`docker.io/homeassistant/home-assistant:latest`**: [Official documentation](https://www.home-assistant.io/installation/raspberrypi#platform-installation) suggests to use one from [GitHub Packages](https://github.com/home-assistant/core/pkgs/container/home-assistant), but GitHub Packages is too slow in my case so I pulled one from [Docker Hub](https://hub.docker.com/r/homeassistant/home-assistant)
+  - **`ghcr.io/home-assistant/home-assistant:latest`**: [Official documentation](https://www.home-assistant.io/installation/raspberrypi#platform-installation) suggests to use one from [GitHub Packages](https://github.com/home-assistant/core/pkgs/container/home-assistant). You can use [Docker Hub](https://hub.docker.com/r/homeassistant/home-assistant) one if you want.
 
 ## Troubleshooting
 ### Container does not start with Python error log `ValueError: Bad marshal data`
