@@ -3,7 +3,7 @@ RPi-SenseStation OS(Linux) Setup
 
 ## Operating System
  - **Ubuntu Server 22.04 arm64**
-   - Daily prebuilted image(20220916) for Raspberry Pi ARM64
+   - Daily prebuilted image(20220918) for Raspberry Pi ARM64
 
 ## Packages installed
  ### via APT
@@ -30,6 +30,7 @@ $ sudo sysctl -p
 
 ## USB Boot Troubleshoots
  - If your Raspberry Pi does not boot from your USB drive, plug the drive to USB port right next to ethernet port. ([ref](https://askubuntu.com/questions/1363043/can-ubuntu-server-20-04-64-bit-boot-from-usb-device-on-rpi-3b))
+   - In my case, left-top USB port doesn't work but left-bottom USB port works for me.
 
 ## Reducing writes on microSD card (if you using it)
  ### F2FS
