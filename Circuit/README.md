@@ -14,9 +14,10 @@ You can open [the schematic file](Schematic.json) using [EasyEDA](https://easyed
    | A/C L        | L from A/C wall power cord                                         |
    | A/C N        | N from A/C wall power cord                                         |
    | GND          | Ground from A/C wall power cord, *not necessary but recommended*   |
-   | D/C V+       | V+ from USB type micro-B cable                                     |
-   | D/C V-       | V- from USB type micro-B cable                                     |
+   | D/C V+       | V+ from USB type micro-B cable + VCC from HDD SATA to USB cable    |
+   | D/C V-       | V- from USB type micro-B cable + GND from HDD SATA to USB cable    |
    |              | *Data wires(D+, D-) from USB type micro-B cable are not connected* |
+   |              | *Power wires(VCC, GND) from RPi USB are not connected*             |
  - MCP3008 ADC converter
    | from         | to                  |
    | ------------ | ------------------- |
@@ -31,7 +32,13 @@ You can open [the schematic file](Schematic.json) using [EasyEDA](https://easyed
    | CH0 (#1)     | Sound sensor AO     |
    | CH1 (#2)     | CdS light sensor AO |
    | CH2 (#3)     | Gas sensor AOUT     |
-  
+ - HDD SATA to USB converter *(cable modded)*
+   | from | to                       |
+   | ---- | ------------------------ |
+   | VCC  | PSU D/C V+               |
+   | GND  | PSU D/C V-               |
+   | D+   | Raspberry Pi USB port D+ |
+   | D-   | Raspberry Pi USB port D- |
  - Pi-FAN
    | from | to           |
    | ---- | ------------ |
