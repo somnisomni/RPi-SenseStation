@@ -1,6 +1,12 @@
 RPi-SenseStation Sense-HAT Addendum
 ===================================
 
+No console shows on HDMI monitor
+--------------------------------
+This is because Sense-HAT framebuffer has been set on `/dev/fb0`. In this case, normal VC4 framebuffer will set on `/dev/fb1` and Sense-HAT LED matrix keep cleared even set pixels or something on it.
+
+I can't find how Nth framebuffer to be set as default, or change ordering for now.
+
 Prevent Industrial I/O take over I2C sensors of Sense-HAT
 ---------------------------------------------------------
 > Ref: [EnvTrackerNode README](https://github.com/J-Pai/EnvTrackerNode/blob/master/README.md#raspberry-pi-setup)
@@ -36,3 +42,7 @@ $ sudo i2cdetect -y 1
     blacklist industrialio
     ```
   - Reboot, Industrial I/O modules won't be loaded.
+
+Additionally, if you keep seeing `UU` in `i2cdetect` after do this, it looks like kernel modules of individual sensor are loaded. Execute `lsmod` and find some modules including sensor model names, and block it.  
+Some known modules: `hts221_spi`, `hts221_i2c`, `hts221`
+
