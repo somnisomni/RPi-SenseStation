@@ -3,7 +3,7 @@ RPi-SenseStation OS(Linux) Setup
 
 ## Operating System
  - **Ubuntu Server 22.04 arm64**
-   - Daily prebuilted image(20220918) for Raspberry Pi ARM64
+   - Daily prebuilted image(20221008) for Raspberry Pi ARM64
 
 ## Packages installed
  ### via APT

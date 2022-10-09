@@ -25,6 +25,10 @@ arm_boost=1
 dtparam=i2c_arm=on
 # Enable SPI interface
 dtparam=spi=on
+
+# Sense-HAT
+#dtoverlay=rpi-sense
+
 # Enable DRM VC4 V3D driver
 dtoverlay=vc4-kms-v3d
 
