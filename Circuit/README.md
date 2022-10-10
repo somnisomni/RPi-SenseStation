@@ -49,12 +49,11 @@ You can open [the schematic file](Schematic.json) using [EasyEDA](https://easyed
    | ------------------------- | --------------------------- |
    | 3V3 (#1)                  | RPi 3V3 (#1)                |
    | 5V (#2)                   | RPi 5V (#2)                 |
+   | GND                       | RPi GND                     |
    | I<sup>2</sup>C SDA (#3)   | RPi I<sup>2</sup>C SDA (#3) |
    | I<sup>2</sup>C SCL (#5)   | RPi I<sup>2</sup>C SDA (#5) |
    | IMU Interrupt 1 (#16)     | RPi GPIO23 (#16)            |
    | IMU Interrupt 2 (#18)     | RPi GPIO24 (#18)            |
-   | Atmel Program Reset (#22) | RPi GPIO25 (#22)            |
-   | Atmel Chip Select (#24)   | RPi CS0 (#24)               |
    | *... other pinouts*       | *not connected*             |
  - Power switch
    | from   | to                                                 |
