@@ -7,6 +7,8 @@ This is because Sense-HAT framebuffer has been set on `/dev/fb0`. In this case, 
 
 I can't find how Nth framebuffer to be set as default, or change ordering for now.
 
+This seems to happen sometimes, so it's worth trying to reboot`(ctrl+alt+del)` Pi again and again until you see console TTY on your monitor, if you have to.
+
 Prevent Industrial I/O take over I2C sensors of Sense-HAT
 ---------------------------------------------------------
 > Ref: [EnvTrackerNode README](https://github.com/J-Pai/EnvTrackerNode/blob/master/README.md#raspberry-pi-setup)
