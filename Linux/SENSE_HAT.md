@@ -1,13 +1,31 @@
 RPi-SenseStation Sense-HAT Addendum
 ===================================
 
+Don't change I2C baudrate
+-------------------------
+Changing I2C baudrate with `dtparam=i2c_baudrate=<NNNNNN>` in `config.txt` can result the Sense-HAT kernel module fail to read I2C data.
+
 No console shows on HDMI monitor
 --------------------------------
 This is because Sense-HAT framebuffer has been set on `/dev/fb0`. In this case, normal VC4 framebuffer will set on `/dev/fb1` and Sense-HAT LED matrix keep cleared even set pixels or something on it.
 
-I can't find how Nth framebuffer to be set as default, or change ordering for now.
+~~I can't find how Nth framebuffer to be set as default, or change ordering for now.~~ **SEE "Workaround" BELOW**
 
 This seems to happen sometimes, so it's worth trying to reboot`(ctrl+alt+del)` Pi again and again until you see console TTY on your monitor, if you have to.
+
+### Workaround
+A workaround for this problem is to set `framebuffer_priority` in `config.txt`. In `config.txt`, add lines below:
+  ```
+  # `framebuffer_priority` config does not work with KMS driver, so the driver should be disabled to apply this workaround
+  # Just comment out existing dtoverlay line
+  #dtoverlay=vc4-kms-v3d
+
+  framebuffer_priority=2
+  display_default_lcd=0
+  ```
+Since we are going to use Pi as headless/CLI-only, so it's not very big deal not to use VC4 KMS driver. But on my system disabling `vc4-kms-v3d` will make screen keep flickering/flashing, and I can't figure out why this happens. ~~At least it's far better than nothing shown on monitor~~
+
+You can check out official references of [`framebuffer_priority`](https://www.raspberrypi.com/documentation/computers/config_txt.html#framebuffer_priority) and [`display_default_lcd`](https://www.raspberrypi.com/documentation/computers/config_txt.html#display_default_lcd).
 
 Prevent Industrial I/O take over I2C sensors of Sense-HAT
 ---------------------------------------------------------
