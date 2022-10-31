@@ -1,0 +1,11 @@
+[Unit]
+Description=somni RPi-SenseStation Startup
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bash /opt/somni/sensehat-status/startup.sh
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target
