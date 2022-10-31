@@ -15,6 +15,7 @@ def powerBlink():
     sleep(1)
     sense.set_pixel(7, 7, NOLIT)
     sleep(4)
+# More actions can be added using threads...
 
 # === Main Procedure ===
 if __name__ == "__main__":
