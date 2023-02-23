@@ -14,9 +14,13 @@ $ podman run -d \
              --name homeassistant \
              -e TZ=Asia/Seoul \
              -u $(id -u):$(id -g) \
+             --userns=keep-id \
              -v /data/homeassistant/config:/config:Z,U \
              --net=host \
              ghcr.io/home-assistant/home-assistant:latest
+# If you are planning to use Bluetooth, then add '-v /run/dbus:/run/dbus:ro' option.
+#   More info: https://www.home-assistant.io/integrations/bluetooth#additional-details-for-container-core-and-supervised-installs
+# '--userns=keep-id' is Podman-specific. Refer: https://docs.podman.io/en/latest/markdown/options/userns.container.html
 
 # Enable UFW firewall and allow Home Assistant Web UI port
 $ sudo ufw enable
