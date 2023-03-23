@@ -1,0 +1,55 @@
+{
+  /* MQTT broker information. required. */
+  "mqtt": {
+    // MQTT broker username
+    "username": "string",
+    // MQTT broker password
+    "password": "string",
+    // MQTT broker host
+    "host": "string",
+    // MQTT broker port, default is 1883 according to paho-mqtt documentation
+    "port": 1883
+  },
+
+  /* Default parameters for modules, these parameters can be overwritten in per-module configuration */
+  "module_defaults": {
+    // Module loop interval in seconds, default is 30s. 'expire_after' will be set to a double of this value
+    "loop_interval": 30
+  },
+
+  /* Modules */
+  "modules": [
+    // Heartbeat module
+    {
+      "base": "heartbeat"
+    },
+
+    // System module
+    {
+      "base": "system"
+    },
+
+    // Ping module
+    {
+      "base": "ping",
+
+      // Ping target display name, whitespaces will be replaced to hyphen(-)
+      "target_name": "Localhost",
+      // Ping target host (IP, hostname or domain name)
+      "target_host": "127.0.0.1"
+    },
+
+    // DHT11 sensor module
+    {
+      "base": "dht11",
+
+      // GPIO pin where connected with DHT11 data pin. Specify a BCM GPIO pin number
+      "gpio_pin": 27
+    },
+
+    // Sense-HAT module
+    {
+      "base": "sensehat"
+    }
+  ]
+}

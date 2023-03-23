@@ -1,0 +1,3 @@
+paho-mqtt==1.6.1
+odroid-wiringpi==3.14.4
+odroid-dht11==0.1.0
